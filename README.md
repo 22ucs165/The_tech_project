@@ -89,14 +89,7 @@
 - MongoDB
 - Handlebars
 
-## ✒️ Authors <a name="authors"></a>
 
-<p align="center">
-<img width= "15%" src = "https://user-images.githubusercontent.com/112839752/235676651-4769e82c-fbcf-4f3e-b545-c54c11963fcd.jpeg">
-</p>
-
-<h2 align="center" >Shravan</h2>
-<p align="center" >Full-stack web developer, Student at Masai School</p>
 
 ## 🎯 Acknowledgements <a name="acknowledgement"></a>
 
