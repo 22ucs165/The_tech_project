@@ -162,12 +162,10 @@ app.listen(process.env.port, async () => {
 /*
 {
   sub: '107520562056112635909',
-  name: 'Shravan Singh',
-  given_name: 'Shravan',
-  family_name: 'Singh',
-  picture: 'https://lh3.googleusercontent.com/a/AGNmyxaUmAJfk2CG0p3DS0jq2Vr3NvWmUvTRq3XiouCG0g=s96-c',
-  email: 'singhshravan1208@gmail.com',
+  name: 'Rishaqbh Jain',
+  given_name: 'Rishabh',
+  family_name: 'Jain',
+  email: 'rishabhspss@gmail.com'
   email_verified: true,
-  locale: 'en-GB'
 }
 */
