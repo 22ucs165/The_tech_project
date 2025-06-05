@@ -1,0 +1,32 @@
+body{
+    background-color: #1b1c21
+}
+h1{
+    color: white;
+    font-weight: lighter;
+}
+.gallery{
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+.back_button{
+    width: 96%;
+    margin: auto;
+}
+.back_button>img{
+    width: 5%;
+    cursor: pointer;
+}
+.dummy{
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.205);
+    border: 0px;
+}
+.gallery>div{
+    border: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

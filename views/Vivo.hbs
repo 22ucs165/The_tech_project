@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/brand_products.css">
+    <link rel="shortcut icon" href="https://github.com/shrvn12/tech_project_images/blob/main/icons&logos/favicon.png?raw=true" type="image/x-icon">
+    <title>Vivo</title>
+</head>
+<body>
+   <div class="nav">
+      <div>
+          <img src="../icons&logos/TTP_white_icon.png" alt="">
+      </div>
+      <div>
+          <a href="../">Home</a>
+          <a href="../product_gallery.html">Select</a>
+          <a href="../wishlist.html">Wishlist</a>
+          <a class="login" href="../login.html">Login</a>
+          <a class="login" href="../register.html">Signup</a>
+          <a class="logout">Logout</a>
+      </div>
+      <div>
+          <p id="username"></p>
+      </div>
+  </div>
+
+    <h1>Vivo</h1>
+
+    <div class="cards">
+         <div id="X Series">
+            <img id="X Series" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Vivo/X_Series/X_Series.png?raw=true" alt="">
+            <p id="X Series">X Series</p>
+         </div>
+         <div id="V Series">
+            <img id="V Series" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Vivo/V_Series/V_Series.png?raw=true" alt="">
+            <p id="V Series">V Series</p>
+         </div>
+         <div id="Y Series">
+            <img id="Y Series" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Vivo/Y_Series/Y_Series.png?raw=true" alt="">
+            <p id="Y Series">Y Series</p>
+         </div>
+         <div id="T Series">
+            <img id="T Series" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Vivo/T_Series/T_Series.png?raw=true" alt="">
+            <p id="T Series">T Series</p>
+         </div>
+         <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Vivo/All_Devices/All_Devices.png?raw=true" alt="">
+            <p>Explore All</p>
+         </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+   let cards = document.querySelectorAll('.cards>div');
+   let filters = JSON.parse(localStorage.getItem('tech_project_filters')) || {};
+   for(let elem of cards){
+      elem.addEventListener('click',(event) => {
+         filters.brand = ['vivo'];
+         if(event.target.id.length){
+            filters.series = [event.target.id];
+         }
+         else{
+
+         }
+         localStorage.setItem('tech_project_filters',JSON.stringify(filters));
+         console.log(filters, event.target);
+         window.location.href = "../product_gallery.html"
+      })
+   }
+</script>
+<script src="../scripts/navbar.js"></script>

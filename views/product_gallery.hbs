@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTP | Products Gallery</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
+    <link rel="shortcut icon" href="https://github.com/shrvn12/tech_project_images/blob/main/icons&logos/favicon.png?raw=true" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <img src="./icons&logos/TTP_white_icon.png" alt="">
+        </div>
+        <div>
+            <a href="./">Home</a>
+            <a href="./product_gallery">Select</a>
+            <a href="./wishlist">Wishlist</a>
+            <a class="login" href="./login">Login</a>
+            <a class="login" href="./register">Signup</a>
+            <a class="logout">Logout</a>
+        </div>
+        <div>
+            <p id="username"></p>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div id="filter_toggle">
+            <h3>Filter</h3>
+            <img src="./svg/cross-small-svgrepo-com.svg" alt="">
+        </div>
+
+        <div class="filter">
+            <div id="brands">
+                <h3>Brand</h3>
+                <input type="checkbox" class="brand" value="samsung">
+                <p>Samsung</p>
+                <br>
+                <input type="checkbox" class="brand" value="apple">
+                <p>Apple</p>
+                <br>
+                <input type="checkbox" class="brand" value="oppo">
+                <p>Oppo</p>
+                <br>
+                <input type="checkbox" class="brand" value="vivo">
+                <p>Vivo</p>
+                <br>
+                <input type="checkbox" class="brand" value="motorola">
+                <p>Motorola</p>
+                <br>
+                <input type="checkbox" class="brand" value="xiaomi">
+                <p>Xiaomi</p>
+            </div>
+            <div id="series">
+                <h3>Series</h3>
+                <input type="checkbox" class="series" value="Galaxy A">
+                <p class="series">Galaxy A</p>
+                <br>
+                <input type="checkbox" class="series" value="Galaxy F">
+                <p class="series">Galaxy F</p>
+                <br>
+                <input type="checkbox" class="series" value="Galaxy M">
+                <p class="series">Galaxy M</p>
+                <br>
+                <input type="checkbox" class="series" value="Galaxy S">
+                <p class="series">Galaxy S</p>
+                <br>
+                <input type="checkbox" class="series" value="Galaxy Z">
+                <p class="series">Galaxy Z</p>
+            </div>
+            <div>
+                <h3>Processor</h3>
+                <input type="checkbox" class="processor" value="snapdragon">
+                <p>Snapdragon</p>
+                <br>
+                <input type="checkbox" class="processor" value="apple">
+                <p>Apple</p>
+                <br>
+                <input type="checkbox" class="processor" value="mediaTek">
+                <p>MediaTek</p>
+                <br>
+                <input type="checkbox" class="processor" value="exynos">
+                <p>Exynos</p>
+                <br>
+                <input type="checkbox" class="processor" value="unisoc">
+                <p>Unisoc</p>
+            </div>
+            <div>
+                <h3>RAM</h3>
+                <input type="checkbox" class="ram" value="16GB">
+                <p>16GB</p>
+                <br>
+                <input type="checkbox" class="ram" value="12GB">
+                <p>12GB</p>
+                <br>
+                <input type="checkbox" class="ram" value="8GB">
+                <p>8GB</p>
+                <br>
+                <input type="checkbox" class="ram" value="6GB">
+                <p>6GB</p>
+                <br>
+                <input type="checkbox" class="ram" value="4GB">
+                <p>4GB</p>
+            </div>
+            <div>
+                <h3>Storage</h3>
+                <input type="checkbox" class="storage" value="1TB">
+                <p>1TB</p>
+                <br>
+                <input type="checkbox" class="storage" value="512GB">
+                <p>512GB</p>
+                <br>
+                <input type="checkbox" class="storage" value="256GB">
+                <p>256GB</p>
+                <br>
+                <input type="checkbox" class="storage" value="128GB">
+                <p>128GB</p>
+                <br>
+                <input type="checkbox" class="storage" value="64GB">
+                <p>64GB</p>
+            </div>
+            <div>
+                <h3>Sort By</h3>
+                <input type="checkbox" class="sort" value="price">
+                <p>Price</p>
+                <br>
+                <input type="checkbox" class="sort" value="ram">
+                <p>RAM</p>
+                <br>
+                <input type="checkbox" class="sort" value="storage">
+                <p>Storage</p>
+                <br>
+                <input type="checkbox" class="sort" value="size">
+                <p>Size</p>
+            </div>
+        </div>
+
+        <div class="gallery">
+
+            <h1>Loading...</h1>
+
+            <!-- ================================Syntax====== -->
+
+            <!-- <div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/cream_300x.png?v=1668756103" alt="">
+                </div>
+                <div>
+                    <h3>Title</h3>
+                    <h3>price</h3> <h3>discount</h3>
+                    <hr>
+                    <div class="colours">
+                            <div>
+                                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1672740794.53385063.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1672740812.0287059.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1672740832.1415277.jpg" alt="">
+                            </div>
+                    </div>
+                    <p>offers</p>
+                    <button>Add to cart</button>
+                </div>
+            </div> -->
+
+            <!-- ============================================= -->
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+<script src="./scripts/gallery.js"></script>
+<script src="./scripts/navbar.js"></script>

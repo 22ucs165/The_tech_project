@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/brand_products.css">
+    <link rel="shortcut icon" href="https://github.com/shrvn12/tech_project_images/blob/main/icons&logos/favicon.png?raw=true" type="image/x-icon">
+    <title>Oppo</title>
+</head>
+<body>
+   <div class="nav">
+      <div>
+          <img src="../icons&logos/TTP_white_icon.png" alt="">
+      </div>
+      <div>
+          <a href="../">Home</a>
+          <a href="../product_gallery.html">Select</a>
+          <a href="../wishlist.html">Wishlist</a>
+          <a class="login" href="../login.html">Login</a>
+          <a class="login" href="../register.html">Signup</a>
+          <a class="logout">Logout</a>
+      </div>
+      <div>
+          <p id="username"></p>
+      </div>
+  </div>
+    <h1>Oppo</h1>
+
+    <div class="cards">
+         <div id="Find N">
+            <img id="Find N" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Oppo/Find_N/Find_N.png?raw=true" alt="">
+            <p id="Find N">Find N</p>
+         </div>
+         <div id="Find X">
+            <img id="Find X" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Oppo/Find_X/Find_X.png?raw=true" alt="">
+            <p id="Find X">Find X</p>
+         </div>
+         <div id="Reno">
+            <img id="Reno" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Oppo/Reno/Reno.png?raw=true" alt="">
+            <p id="Reno">Reno</p>
+         </div>
+         <div id="F Series">
+            <img id="F Series" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Oppo/F_Series/F_Series.png?raw=true" alt="">
+            <p id="F Series">F Series</p>
+         </div>
+         <div id="A Series">
+            <img id="A Series" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Oppo/A_Series/A_Series.png?raw=true" alt="">
+            <p id="A Series">A Series</p>
+         </div>
+         <div id="K Series">
+            <img id="K Series" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Oppo/K_Series/K_Series.png?raw=true" alt="">
+            <p id="K Series">K Series</p>
+         </div>
+         <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Oppo/All_Devices/All_Devices.png?raw=true" alt="">
+            <p>Explore All</p>
+         </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+   let cards = document.querySelectorAll('.cards>div');
+   let filters = JSON.parse(localStorage.getItem('tech_project_filters')) || {};
+   for(let elem of cards){
+      elem.addEventListener('click',(event) => {
+         filters.brand = ['oppo'];
+         if(event.target.id.length){
+            filters.series = [event.target.id];
+         }
+         localStorage.setItem('tech_project_filters',JSON.stringify(filters));
+         console.log(filters, event.target);
+         window.location.href = "../product_gallery.html"
+      })
+   }
+</script>
+<script src="../scripts/navbar.js"></script>

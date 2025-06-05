@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/brand_products.css">
+    <link rel="shortcut icon" href="https://github.com/shrvn12/tech_project_images/blob/main/icons&logos/favicon.png?raw=true" type="image/x-icon">
+    <title>Xiaomi</title>
+</head>
+<body>
+   <div class="nav">
+      <div>
+          <img src="./icons&logos/TTP_white_icon.png" alt="">
+      </div>
+      <div>
+          <a href="../">Home</a>
+          <a href="../product_gallery.html">Select</a>
+          <a href="../wishlist.html">Wishlist</a>
+          <a class="login" href="../login.html">Login</a>
+          <a class="login" href="../register.html">Signup</a>
+          <a class="logout">Logout</a>
+      </div>
+      <div>
+          <p id="username"></p>
+      </div>
+  </div>
+
+    <h1>Xiaomi</h1>
+
+    <div class="cards">
+         <div id="Xiaomi">
+            <img id="Xiaomi" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Xiaomi/Xiaomi/Xiaomi.png?raw=true" alt="">
+            <p id="Xiaomi">Xiaomi</p>
+         </div>
+         <div id="Redmi">
+            <img id="Redmi" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Xiaomi/Redmi/Redmi.png?raw=true" alt="">
+            <p id="Redmi">Redmi</p>
+         </div>
+         <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Xiaomi/All_devices/Xiaomi_all_devices.png?raw=true" alt="">
+            <p>Explore All</p>
+         </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    let cards = document.querySelectorAll('.cards>div');
+    let filters = JSON.parse(localStorage.getItem('tech_project_filters')) || {};
+    for(let elem of cards){
+       elem.addEventListener('click',(event) => {
+          filters.brand = ['xiaomi'];
+          if(event.target.id.length){
+             filters.series = [event.target.id];
+          }
+          else{
+ 
+          }
+          localStorage.setItem('tech_project_filters',JSON.stringify(filters));
+          console.log(filters, event.target);
+          window.location.href = "../product_gallery.html"
+       })
+    }
+ </script>
+ <script src="../scripts/navbar.js"></script>

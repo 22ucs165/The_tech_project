@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTP | SignIn</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="shortcut icon" href="https://github.com/shrvn12/tech_project_images/blob/main/icons&logos/favicon.png?raw=true" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="back_button">
+        <img src="./svg/back-svgrepo-com.svg" alt="">
+    </div>
+    <h2>Welcome</h2>
+    <h1>Sign In</h1>
+
+    <form class="login_form">
+        <p>E-mail</p>
+        <input id="email" type="email" required>
+        <p>Password</p>
+        <input id="password" type="password" minlength="5" required>
+        <a href="./verify">Forgot Password?</a>
+        <button>Sign In</button>
+    </form>
+    <p>Don't have an account? <a href="./register">Sign Up</a></p>
+    <p>OR</p>
+    <div class="oauth">
+        <a href="/auth/google">
+            <img src="./svg/google-icon-svgrepo-com.svg" alt="">
+        </a>
+        <a href='https://github.com/login/oauth/authorize?client_id=bbda1cea27e393bd7767&scope=user%20public_repo'>
+            <img src="./svg/github-142-svgrepo-com.svg" alt="">
+        </a>
+    </div>
+</body>
+</html>
+
+<script src="./scripts/login.js"></script>

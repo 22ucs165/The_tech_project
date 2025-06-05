@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/brand_products.css">
+    <link rel="shortcut icon" href="https://github.com/shrvn12/tech_project_images/blob/main/icons&logos/favicon.png?raw=true" type="image/x-icon">
+    <title>Samsung</title>
+</head>
+<body>
+   <div class="nav">
+      <div>
+          <img src="../icons&logos/TTP_white_icon.png" alt="">
+      </div>
+      <div>
+          <a href="../">Home</a>
+          <a href="../product_gallery.html">Select</a>
+          <a href="../wishlist.html">Wishlist</a>
+          <a class="login" href="../login.html">Login</a>
+          <a class="login" href="../register.html">Signup</a>
+          <a class="logout">Logout</a>
+      </div>
+      <div>
+          <p id="username"></p>
+      </div>
+  </div>
+
+    <h1>Samsung</h1>
+
+    <div class="cards">
+         <div id="Galaxy A">
+            <img id="Galaxy A" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Samsung/Galaxy_A/Galazy_A.png?raw=true" alt="">
+            <p id="Galaxy A">Galaxy A</p>
+         </div>
+         <div id="Galaxy F">
+            <img id="Galaxy F" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Samsung/Galaxy_F/Galaxy_F.png?raw=true" alt="">
+            <p id="Galaxy F">Galaxy F</p>
+         </div>
+         <div id="Galaxy M">
+            <img id="Galaxy M" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Samsung/Galaxy_M/Galaxy_M.png?raw=true" alt="">
+            <p id="Galaxy M">Galaxy M</p>
+         </div>
+         <div id="Galaxy S">
+            <img id="Galaxy S" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Samsung/Galaxy_S/Galaxy_S.png?raw=true" alt="">
+            <p id="Galaxy S">Galaxy S</p>
+         </div>
+         <div id="Galaxy Z">
+            <img id="Galaxy Z" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Samsung/Galaxy_Z/Galaxy_Z.png?raw=true" alt="">
+            <p id="Galaxy Z">Galaxy Z</p>
+         </div>
+         <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Samsung/Galaxy_all_devices/Galaxy_all_devices.png?raw=true" alt="">
+            <p>Explore All</p>
+         </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+   let cards = document.querySelectorAll('.cards>div');
+   let filters = JSON.parse(localStorage.getItem('tech_project_filters')) || {};
+   for(let elem of cards){
+      elem.addEventListener('click',(event) => {
+         filters.brand = ['samsung'];
+         if(event.target.id.length){
+            filters.series = [event.target.id];
+         }
+         localStorage.setItem('tech_project_filters',JSON.stringify(filters));
+         console.log(filters, event.target);
+         window.location.href = "../product_gallery"
+      })
+   }
+</script>
+<script src="../scripts/navbar.js"></script>

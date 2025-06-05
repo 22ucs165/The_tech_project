@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/brand_products.css">
+    <link rel="shortcut icon" href="https://github.com/shrvn12/tech_project_images/blob/main/icons&logos/favicon.png?raw=true" type="image/x-icon">
+    <title>Motorola</title>
+</head>
+<body>
+   <div class="nav">
+      <div>
+          <img src="../icons&logos/TTP_white_icon.png" alt="">
+      </div>
+      <div>
+          <a href="../">Home</a>
+          <a href="../product_gallery.html">Select</a>
+          <a href="../wishlist.html">Wishlist</a>
+          <a class="login" href="../login.html">Login</a>
+          <a class="login" href="../register.html">Signup</a>
+          <a class="logout">Logout</a>
+      </div>
+      <div>
+          <p id="username"></p>
+      </div>
+  </div>
+
+    <h1>Motorola</h1>
+
+    <div class="cards">
+         <div id="Moto G">
+            <img id="Moto G" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Motorola/Moto_G/Moto_G.png?raw=true" alt="">
+            <p id="Moto G">Moto G</p>
+         </div>
+         <div id="Moto E">
+            <img id="Moto E" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Motorola/Moto_E/Moto_E.png?raw=true" alt="">
+            <p id="Moto E">Moto E</p>
+         </div>
+         <div id="Moto Edge">
+            <img id="Moto Edge" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Motorola/Moto_Edge/Moto_Edge.png?raw=true" alt="">
+            <p id="Moto Edge">Moto Edge</p>
+         </div>
+         <div id="Moto Razr">
+            <img id="Moto Razr" src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Motorola/Moto_Razr/Moto_Razr.png?raw=true" alt="">
+            <p id="Moto Razr">Moto Razr</p>
+         </div>
+         <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/brand_images/Motorola/All_Devices/All_devices.png?raw=true" alt="">
+            <p>Explore All</p>
+         </div>
+    </div>
+</body>
+</html>
+
+<script>
+   let cards = document.querySelectorAll('.cards>div');
+   let filters = JSON.parse(localStorage.getItem('tech_project_filters')) || {};
+   for(let elem of cards){
+      elem.addEventListener('click',(event) => {
+         filters.brand = ['motorola'];
+         if(event.target.id.length){
+            filters.series = [event.target.id];
+         }
+         else{
+
+         }
+         localStorage.setItem('tech_project_filters',JSON.stringify(filters));
+         console.log(filters, event.target);
+         window.location.href = "../product_gallery"
+      })
+   }
+</script>
+<script src="../scripts/navbar.js"></script>

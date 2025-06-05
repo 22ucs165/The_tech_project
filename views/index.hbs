@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://github.com/shrvn12/tech_project_images/blob/main/icons&logos/favicon.png?raw=true" type="image/x-icon">
+    <title>The Tech Project</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <img src="./icons&logos/TTP_white_icon.png" alt="">
+        </div>
+        <div>
+            <a href="./">Home</a>
+            <a href="./product_gallery">Select</a>
+            <a href="./wishlist">Wishlist</a>
+            <a class="login" href="./login">Login</a>
+            <a class="login" href="./register">Signup</a>
+            <a class="logout">Logout</a>
+        </div>
+        <div>
+            <p id="username">{{name}}</p>
+        </div>
+    </div>
+
+    <h1>NEWEST IN MARKET</h1>
+
+    <div class="cards">
+        <div onclick="redirect('6459024112b2d00ee4b839d6')">
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Asus/ROG7/ROG7.png?raw=true" alt="">
+            <p>ROG Phone 7</p>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Vivo/Vivo_T/VivoT2/VivoT2.png?raw=true" alt="">
+            <p>Vivo T2 5G</p>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Motorola/Moto_G/MotoG13/lavendar-blue/MotoG13_back@lavendar-blue.png?raw=true" alt="">
+            <p>Moto G13</p>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Vivo/Vivo_V/V27/Vivo_V27.png?raw=true" alt="">
+            <p>Vivo V27</p>
+        </div>
+        <div onclick="redirect('644579bfa8b843fa4af8f2c4')">
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Samsung/Galaxy_F/F14/Galaxy_f14.png?raw=true" alt="">
+            <p>Samsung Galaxy F14 5G</p>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Oppo/Oppo_Find/Find_N2_Flip.png?raw=true" alt="">
+            <p>Oppo Find N2 Flip</p>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Samsung/Galaxy_A/A54/Galaxy_A54.png?raw=true" alt="">
+            <p>Samsung Galaxy A54 5G</p>
+        </div>
+    </div>
+
+    <div id="Samsung" class="brand">
+        <div>
+            <div>
+                <h1>SAMSUNG</h1>
+                <button>EXPLORE</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Samsung/highlights/galaxy-s23-ultra-highlights-online-exclusive-colors.jpg?raw=true" alt="">
+        </div>
+    </div>
+
+    <div id="Apple" class="brand">
+        <div>
+            <div>
+                <h1>iPHONE</h1>
+                <button>EXPLORE</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Apple/highlights/apple_dynamic_island.jpg?raw=true" alt="">
+        </div>
+    </div>
+
+    <div id="Oppo" class="brand">
+        <div>
+            <div>
+                <h1>Oppo</h1>
+                <button>EXPLORE</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Oppo/Highlights/Oppo_Find_N2_Flip_black.png?raw=true" alt="">
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Oppo/Highlights/Oppo_Find_N2_Flip_lavendar.png?raw=true" alt="">
+        </div>
+    </div>
+
+    <div id="Xiaomi" class="brand">
+        <div>
+            <div>
+                <h1>Xiaomi</h1>
+                <button>EXPLORE</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://raw.githubusercontent.com/shrvn12/tech_project_images/main/Smartphones/Xiaomi/highlights/Redmi12proplus.webp" alt="">
+        </div>
+    </div>
+
+    <div id="Vivo" class="brand">
+        <div>
+            <div>
+                <h1>Vivo</h1>
+                <button>EXPLORE</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Vivo/Highlights/Vivo_X80.jpg?raw=true" alt="">
+        </div>
+    </div>
+
+    <div id="Motorola" class="brand">
+        <div>
+            <div>
+                <h1>Motorola</h1>
+                <button>EXPLORE</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://github.com/shrvn12/tech_project_images/blob/main/Smartphones/Motorola/Highlights/Moto_edge_30_fusion.png?raw=true" alt="">
+        </div>
+    </div>
+
+    <!-- <div id="Realme" class="brand">
+        <div>
+            <div>
+                <h1>Realme</h1>
+                <button>EXPLORE</button>
+            </div>
+        </div>
+        <div>
+            <img src="./images2/Smartphones/Realme/Highlights/Realme_GT.png" alt="">
+        </div>
+    </div> -->
+
+</body>
+</html>
+
+<script src="./scripts/index.js"></script>
+<script src="./scripts/navbar.js"></script>

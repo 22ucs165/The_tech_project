@@ -1,0 +1,195 @@
+body>h1{
+    color: white;
+    margin: 7% 0% 1% 2%;
+}
+
+.cards{
+    width: 97%;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid white; */
+    overflow-x: scroll;
+    /* scroll-behavior: smooth; */
+    /* transition: 0.5s; */
+}
+
+.cards::-webkit-scrollbar{
+    height: 0px;
+}
+
+.cards>div{
+    width: 20%;
+    flex-shrink: 0;
+    margin: 1%;
+    /* border: 1px solid white; */
+    background-color: #26222b;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: #1b1c21;
+    cursor: pointer;
+}
+
+.cards>div>img{
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.cards>div>p{
+    font-size: small;
+    text-align: center;
+    color: white;
+    margin: 5% auto 10% auto;
+}
+
+.brand{
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#samsung, #Apple{
+    background-color: black;
+}
+
+.brand>div{
+    width: 40%;
+    /* border: 1px solid white; */
+    /* font-size: xx-large; */
+}
+
+.brand>div>h1{
+    font-size: xx-large;
+}
+
+.brand>div:nth-child(2){
+    width: 60%;
+}
+.brand>div>img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.brand h1{
+    color: white;
+    width: 100%;
+    display: block;
+    display: flex;
+    align-self: center;
+}
+
+.brand button{
+    padding: 2%;
+    width: 50%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: small;
+}
+
+.brand button:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+    box-shadow: rgba(255, 255, 255, 0.363) 0px 0px 10px;
+}
+
+.brand>div>div{
+    width: 80%;
+    margin: auto;
+}
+
+.brand>div{
+    display: flex;
+    align-items: center;
+}
+
+#Oppo img,#Xiaomi img,#Realme img{
+    width: 50%;
+}
+
+#Vivo img{
+    width: 80%;
+}
+
+#Motorola img{
+    width: 80%;
+}
+
+#Motorola{
+    margin-top: 0%;
+}
+
+#Motorola img{
+    width: 60%;
+}
+
+@media all and (max-width:1000px) and (min-width:699px){
+    .brand>div>h1{
+        font-size: x-large;
+    }
+
+    .brand button{
+        font-size: small;
+    }
+}
+
+@media all and (max-width:800px){
+    body>h1{
+        font-size: larger;
+        margin-top: 10%;
+    }
+}
+
+@media all and (max-width:700px) and (min-width:600px) {
+    .brand>div>div>h1{
+        font-size: large;
+    }
+
+    .brand button{
+        font-size: small;
+    }
+}
+
+@media all and (max-width:600px) and (min-width:500px) {
+    .brand>div>div>h1{
+        font-size: medium;
+    }
+
+    .brand button{
+        font-size: smaller;
+    }
+}
+
+@media all and (max-width:500px) and (min-width:400px) {
+    .brand>div>div>h1{
+        font-size: smaller;
+    }
+
+    .brand button{
+        font-size: x-small;
+    }
+
+    /* body>h1{
+        margin-top: 15%;
+    } */
+}
+
+@media all and (max-width:400px) {
+    .brand>div>div>h1{
+        font-size: small;
+    }
+
+    .brand button{
+        font-size: xx-small;
+    }
+
+    /* body>h1{
+        margin-top: 15%;
+    } */
+}
