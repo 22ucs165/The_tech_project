@@ -12,7 +12,6 @@
 ## 📝 Table of Contents
 - 🍃 [About](#about)
 - 🎯 [Getting Started](#getting_started)
-- 🌿 [Deployment](#deployment)
 - ⚓ [Built Using](#built_using)
 - 🎀 [Acknowledgments](#acknowledgement)
 
@@ -71,15 +70,6 @@
 
 </p>
 
-## 🌿 Deployments <a name="deployment"></a>
-
-- The project is deployed on <a href="https://cyclic.sh" >Cyclic</a>.
-- The project is A full stack project, hence it does not require saperate deployments for backend and frontend.
-- 👉🏻 <a href="https://thetechproject.cyclic.app/" >Here</a> is the deployed link of the project.
-- The project uses free version of cyclic. Server responses may feel slow sometimes.
-- Due to slow internet connection, or slow server responses the app may show some errors, refreshing the page or hitting the URL again is suggested 😊.
-
-## ⚓Built using <a name= "built_using" ></a>
 
 - HTML
 - CSS
